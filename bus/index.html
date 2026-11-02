@@ -53,9 +53,9 @@ const STOPS = [
 ];
 
 const ROW = 96;             // 1系統ぶんの高さ(px)
-let cfg = { top: 350, rows: {} };
-try { Object.assign(cfg, JSON.parse(localStorage.getItem("busCfg") || "{}")); } catch (e) {}
-const save = () => { try { localStorage.setItem("busCfg", JSON.stringify(cfg)); } catch (e) {} };
+let cfg = { top: 230, rows: {} };
+try { Object.assign(cfg, JSON.parse(localStorage.getItem("busCfg2") || "{}")); } catch (e) {}
+const save = () => { try { localStorage.setItem("busCfg2", JSON.stringify(cfg)); } catch (e) {} };
 
 const list = document.getElementById("list");
 const frames = [];
